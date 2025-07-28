@@ -1,0 +1,91 @@
+const Semester = [
+    {
+        name: "Semester 1",
+        subjects: [
+            { name: "Communicative English", credit: 3 },
+            { name: "C Programming Laboratory", credit: 1.5 },
+            { name: "Physics and Chemistry Laboratory", credit: 1.5 },
+            { name: "B.EEE", credit: 3 },
+            { name: "C Programming", credit: 3 },
+            { name: "Chemistry", credit: 3 },
+            { name: "Physics", credit: 3 },
+            { name: "Mathematics-1", credit: 4 }
+        ],
+    },
+    {
+        name: "Semester 2",
+        subjects: [
+            { name: "Python Lab", credit: 1.5 },
+            { name: "EPL", credit: 1.5 },
+            { name: "Python", credit: 3 },
+            { name: "Material Science", credit: 3 },
+            { name: "EVS", credit: 3 },
+            { name: "Mathematics-2", credit: 4 },
+            { name: "EG", credit: 4 },
+            { name: "PS-1", credit: 1 },
+            { name: "Technical English", credit: 3 }
+        ],
+    },
+    {
+        name: "Semester 3",
+        subjects: [
+            { name: "Heritage of Tamil", credit: 1 },
+            { name: "Data Structures", credit: 3 },
+            { name: "TPDE", credit: 4 },
+            { name: "Manufacturing Technology-1", credit: 3 },
+            { name: "Thermodynamics", credit: 4 },
+            { name: "PS-2", credit: 1 },
+            { name: "Engineering Mechanics", credit: 3 },
+            { name: "Fluid Mechanics", credit: 3 },
+            { name: "Fluid Mechanics Lab", credit: 1.5 },
+            { name: "Data Structures Lab", credit: 1.5 },
+            { name: "Manufacturing Technology-1 Lab", credit: 1.5 },
+        ],
+    },
+    {
+        name: "Semester 4",
+        subjects: [
+            { name: "Tamils and Technology", credit: 1 },
+            { name: "EDC", credit: 4 },
+            { name: "SNM", credit: 4 },
+            { name: "Manufacturing Technology-2", credit: 3 },
+            { name: "Thermal Engineering-1", credit: 3 },
+            { name: "PS-3", credit: 1 },
+            { name: "SOM", credit: 3 },
+            { name: "KOM", credit: 3 },
+            { name: "Thermal Engineering-1 Lab", credit: 1.5 },
+            { name: "SOM Lab", credit: 1.5 },
+            { name: "Manufacturing Technology-2 Lab", credit: 1.5 },
+        ],
+    },
+    {
+        name: "Semester 5",
+        subjects: [
+            { name: "Hydraulics", credit: 4 },
+            { name: "Design Project-1", credit: 1 },
+            { name: "UCM/AMT", credit: 3 },
+            { name: "Metrology and Measurements", credit: 3 },
+            { name: "Thermal Engineering-2", credit: 3 },
+            { name: "PS-4", credit: 1 },
+            { name: "DOM", credit: 3 },
+            { name: "DME", credit: 3 },
+            { name: "Thermal Engineering-2 Lab", credit: 1.5 },
+            { name: "K&D Lab", credit: 1.5 },
+            { name: "Metrology and Measurements Lab", credit: 1.5 },
+        ],
+    },
+    {
+        name: "Semester 6",
+        subjects: [
+            { name: "CIM", credit: 3 },
+            { name: "PC LAB", credit: 1 },
+            { name: "Additive Manufacturing", credit: 3 },
+            { name: "HMT", credit: 3 },
+            { name: "AIML", credit: 3 },
+            { name: "OE", credit: 2 },
+            { name: "Comprehension", credit: 1 },
+            { name: "CAD/CAM Lab", credit: 1.5 },
+            { name: "Design Project-2", credit: 1 }
+        ],
+    },
+];
