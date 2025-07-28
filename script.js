@@ -5,6 +5,14 @@ function calculateCGPA() {
   let totalWeightedPoints = 0;
 
   Semester.forEach((sem, semIndex) => {
+    const includeSem = document.getElementById(`include-sem-${semIndex}`);
+    if (!includeSem.checked) {
+      // Skip this semester completely
+      const sgpaElement = document.getElementById(`sgpa-${semIndex}`);
+      sgpaElement.textContent = `SGPA: --`;
+      return;
+    }
+
     let semCredits = 0;
     let semWeightedPoints = 0;
 
@@ -48,9 +56,22 @@ function populateSubjects() {
     const semDiv = document.createElement("div");
     semDiv.className = "semester";
 
+    const semHeader = document.createElement("div");
+    semHeader.style.display = "flex";
+    semHeader.style.alignItems = "center";
+    semHeader.style.gap = "10px";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.id = `include-sem-${semIndex}`;
+    checkbox.checked = true;
+
     const title = document.createElement("h3");
     title.textContent = sem.name;
-    semDiv.appendChild(title);
+
+    semHeader.appendChild(checkbox);
+    semHeader.appendChild(title);
+    semDiv.appendChild(semHeader);
 
     sem.subjects.forEach((subject, subIndex) => {
       const subjectDiv = document.createElement("div");
@@ -58,18 +79,16 @@ function populateSubjects() {
 
       const label = document.createElement("label");
       label.textContent = `${subject.name} (${subject.credit} credits): `;
-      subjectDiv.appendChild(label);
 
       const select = document.createElement("select");
       select.id = `grade-${semIndex}-${subIndex}`;
 
-      // Set "U" as default (won't be visible in dropdown)
+      // Default "U" option (shown as --)
       const defaultOption = document.createElement("option");
       defaultOption.value = "U";
       defaultOption.textContent = "--";
       select.appendChild(defaultOption);
 
-      // Add all grades including "U"
       grades.forEach(g => {
         const option = document.createElement("option");
         option.value = g;
@@ -77,6 +96,7 @@ function populateSubjects() {
         select.appendChild(option);
       });
 
+      subjectDiv.appendChild(label);
       subjectDiv.appendChild(select);
       semDiv.appendChild(subjectDiv);
     });
