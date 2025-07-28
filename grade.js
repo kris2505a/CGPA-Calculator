@@ -8,4 +8,3 @@ const grade = {
   U: 0
 };
 
-const grades = Object.keys(grade);
