@@ -1,2 +1,2 @@
-# kris2505aCGPA-Calculator
+CGPA-Calculator
 CGPA calculator
