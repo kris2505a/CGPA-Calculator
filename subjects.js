@@ -25,7 +25,6 @@ const Semester = [
             { name: "Tamils & Tech.", credit: 1 },
             { name: "EPL", credit: 2 },
             { name: "C Prog. Lab", credit: 2 },
-            { name: "Comm Lab", credit: 2 }
         ],
     },
     {
@@ -39,7 +38,6 @@ const Semester = [
             { name: "Data Structures Lab", credit: 1.5 },
             { name: "OOP Lab", credit: 1.5 },
             { name: "Data Science Lab", credit: 2 },
-            { name: "Professional Development", credit: 1 }
         ],
     },
     {
