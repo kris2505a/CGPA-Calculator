@@ -101,4 +101,13 @@ const Semester = [
             { name: "Mechatronics Lab", credit: 1.5 }
         ],
     },
+    {
+        name: "Semester 8",
+        subjects: [
+            { name: "PE", credit: 3 },
+            { name: "OE", credit: 2 },
+            { name: "Project", credit: 5 },
+            { name: "Internship", credit: 2 }
+        ],
+    },
 ];
